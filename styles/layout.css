@@ -3,8 +3,8 @@
 body {
   background-image: url("images/bk.jpg");
   background-size: cover;
-  justify-content: center;
   display: flex;
+  justify-content: center;
   margin-top: 280px;
   font-family: 'Rubik', sans-serif;
 }
@@ -33,14 +33,15 @@ body {
   50% { border-color: blue }
 }
 
-.typewriter a {
+.typewriter p {
   text-decoration: none;
   font-weight: bold;
   outline: none;
-  display: inline-block;
+
   color: #303030;
   padding: 20px 200px;
   margin-top: 20px;
+  margin-bottom: 50px;
   border-radius: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -50,50 +51,32 @@ body {
   transition: .5s;
   animation: showDiv 3.6s forwards;
 }
-a:hover {background-position: center;}
+p:hover {background-position: center;}
 
 @keyframes showDiv {
     0%,
     99% {
         opacity: 0;
     }
+    
     100% {
-        opacity: 100;
+      opacity: 100;
     }
 
+}
+.bottom a {
+  text-decoration: none;
+  font-weight: bold;
+  outline: none;
 
-    .bottom h1 {
-      color: pink;
-      font-size: 24pt;
-      overflow: hidden;
-      border-right: .15em solid blue; /* The typwriter cursor */
-      white-space: nowrap; /* Keeps the content on a single line */
-      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    }
-
-    .bottom a {
-      text-decoration: none;
-      font-weight: bold;
-      outline: none;
-      display: inline-block;
-      color: #303030;
-      padding: 20px 200px;
-      margin-top: 20px;
-      border-radius: 10px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      background-image: linear-gradient(to right, pink 0%, #9EEFE1 51%, blue 100%);
-      background-size: 200% auto;
-      box-shadow: 0 0 20px rgba(0,0,0,.1);
-      transition: .5s;
-    }
-    a:hover {background-position: center;}
-
-    @keyframes showDiv {
-        0%,
-        99% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 100;
-        }
+  color: #303030;
+  padding: 20px 200px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, pink 0%, #9EEFE1 51%, blue 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  transition: .5s;
+}
+a:hover {background-position: center;}
